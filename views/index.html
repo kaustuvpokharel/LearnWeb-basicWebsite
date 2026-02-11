@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wildlife Sighting Tracker</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <h1> Wildlife Sighting Tracker</h1>
+      <p>by Kaustuv Pokharel</p>
+    </header>
+
+    <main class="main-content">
+      <section class="about-section">
+        <h2>About Me</h2>
+        <div class="about-box">
+
+          <img src="/images/myImage.jpg" alt="My Photo" class="my-photo"/>
+
+          <div class="about-text">
+
+            <p>
+              Hello! I am a web development student at Seneca College. I am
+              learning how to build websites and web applications.
+            </p>
+
+            <p>
+              I like hiking, playing video games, and learning new things about
+              programming. This is my first Express.js project!
+            </p>
+
+            <p>
+              I chose this wildlife tracker project because I think it is cool
+              to track animals in nature.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>About This Project</h2>
+        <p>
+          This is a <strong>Wildlife Sighting Tracker</strong> web app. It is
+          built with Express.js. You can use the API to get data about wildlife
+          sightings.
+        </p>
+        
+        <div class="features-box">
+
+          <div class="feature">
+            <i class="bi bi-database-fill-check"></i>
+            <h3>Data Storage</h3>
+            <p>Store wildlife sighting records</p>
+          </div>
+
+          <div class="feature">
+            <i class="bi bi-eye-fill"></i>
+            <h3>Search</h3>
+            <p>Find specific animals</p>
+          </div>
+
+          <div class="feature">
+            <i class="bi bi-patch-check-fill"></i>
+            <h3>Verified</h3>
+            <p>See verified sightings</p>
+          </div>
+
+          <div class="feature">
+            <i class="bi bi-clock-fill"></i>
+            <h3>Recent</h3>
+            <p>View recent sightings</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="api-section">
+        <h2>API Endpoints</h2>
+        <p>Click on any endpoint to try it:</p>
+
+        <div class="api-list">
+
+          <div class="api-item">
+            <span class="method">GET</span>
+            <a href="/api/sightings" class="api-link">/api/sightings</a>
+            <p>Get all wildlife sightings</p>
+          </div>
+
+          <div class="api-item">
+            <span class="method">GET</span>
+            <a href="/api/sightings/verified" class="api-link">/api/sightings/verified</a>
+            <p>Get only verified sightings</p>
+          </div>
+
+          <div class="api-item">
+            <span class="method">GET</span>
+            <a href="/api/sightings/species-list" class="api-link">/api/sightings/species-list</a>
+            <p>Get list of species names</p>
+          </div>
+
+          <div class="api-item">
+            <span class="method">GET</span>
+            <a href="/api/sightings/habitat/forest" class="api-link">/api/sightings/habitat/forest</a>
+            <p>Get forest habitat sightings</p>
+          </div>
+
+          <div class="api-item">
+            <span class="method">GET</span>
+            <a href="/api/sightings/search/eagle" class="api-link">/api/sightings/search/eagle</a>
+            <p>Search for eagle sightings</p>
+          </div>
+
+          <div class="api-item">
+            <span class="method">GET</span>
+            <a href="/api/sightings/find-index/moose" class="api-link">/api/sightings/find-index/moose</a>
+            <p>Find moose index in database</p>
+          </div>
+
+          <div class="api-item">
+            <span class="method">GET</span>
+            <a href="/api/sightings/recent" class="api-link">/api/sightings/recent</a>
+            <p>Get 3 most recent sightings</p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p> © 2026 Kaustuv | Wildlife Sighting Tracker | Built with ❤️ and Express.js</p>
+    </footer>
+
+  </body>
+</html>
